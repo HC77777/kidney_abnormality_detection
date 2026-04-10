@@ -1,0 +1,16 @@
+Evaluated 95 studies using top-5 aggregation.
+              precision    recall  f1-score   support
+
+        Cyst     1.0000    1.0000    1.0000        28
+      Normal     1.0000    1.0000    1.0000        38
+       Stone     1.0000    1.0000    1.0000        11
+       Tumor     1.0000    1.0000    1.0000        18
+
+    accuracy                         1.0000        95
+   macro avg     1.0000    1.0000    1.0000        95
+weighted avg     1.0000    1.0000    1.0000        95
+
+[[28  0  0  0]
+ [ 0 38  0  0]
+ [ 0  0 11  0]
+ [ 0  0  0 18]]

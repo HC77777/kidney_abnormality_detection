@@ -7,8 +7,8 @@ venv/
 env/
 
 # Large artifacts and datasets
-data/
-outputs/
+/data/
+/outputs/
 *.pt
 *.pth
 *.zip

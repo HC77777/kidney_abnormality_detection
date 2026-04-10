@@ -1,0 +1,36 @@
+Building EfficientNetV2-S model for 4 classes...
+Epoch 1/25 - train_loss: 0.2386 train_acc: 0.9163 val_acc: 0.9690
+Epoch 2/25 - train_loss: 0.0853 train_acc: 0.9733 val_acc: 0.9938
+Epoch 3/25 - train_loss: 0.0736 train_acc: 0.9757 val_acc: 0.9936
+Epoch 4/25 - train_loss: 0.0695 train_acc: 0.9779 val_acc: 0.9888
+Epoch 5/25 - train_loss: 0.0536 train_acc: 0.9812 val_acc: 0.9922
+Epoch 6/25 - train_loss: 0.0524 train_acc: 0.9829 val_acc: 0.9711
+Epoch 7/25 - train_loss: 0.0452 train_acc: 0.9847 val_acc: 0.9968
+Epoch 8/25 - train_loss: 0.0460 train_acc: 0.9842 val_acc: 0.9943
+Epoch 9/25 - train_loss: 0.0383 train_acc: 0.9887 val_acc: 0.9966
+Epoch 10/25 - train_loss: 0.0368 train_acc: 0.9884 val_acc: 0.9975
+Epoch 11/25 - train_loss: 0.0346 train_acc: 0.9893 val_acc: 0.9968
+Epoch 12/25 - train_loss: 0.0314 train_acc: 0.9890 val_acc: 0.9950
+Epoch 13/25 - train_loss: 0.0275 train_acc: 0.9899 val_acc: 0.9984
+Epoch 14/25 - train_loss: 0.0354 train_acc: 0.9882 val_acc: 0.9881
+Epoch 15/25 - train_loss: 0.0256 train_acc: 0.9917 val_acc: 0.9977
+Epoch 16/25 - train_loss: 0.0154 train_acc: 0.9946 val_acc: 0.9927
+Epoch 17/25 - train_loss: 0.0253 train_acc: 0.9921 val_acc: 0.9956
+Epoch 18/25 - train_loss: 0.0232 train_acc: 0.9925 val_acc: 0.9968
+Early stopping after 18 epochs (no improvement for 5 epochs)
+Loading best weights from /Users/haricharanvallem7/majorproject/outputs/best_model_effnet.pt for testing...
+              precision    recall  f1-score   support
+
+        Cyst     0.9947    0.9964    0.9955       560
+      Normal     0.9973    0.9977    0.9975      2213
+       Stone     0.9909    0.9909    0.9909       770
+       Tumor     1.0000    0.9978    0.9989       905
+
+    accuracy                         0.9964      4448
+   macro avg     0.9957    0.9957    0.9957      4448
+weighted avg     0.9964    0.9964    0.9964      4448
+
+[[ 558    0    2    0]
+ [   0 2208    5    0]
+ [   1    6  763    0]
+ [   2    0    0  903]]

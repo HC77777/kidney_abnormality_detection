@@ -292,5 +292,8 @@ elif mode == "Diagnosis (Patient Study)":
                     st.markdown(f"#### Slice: {res['filename']}")
                     st.markdown(f"**Finding:** {res['pred_label']}")
                     st.markdown(f"**Confidence:** {res['conf']:.1%}")
-                    st.write("Red areas indicate regions the AI found suspicious.")
+                    if res['pred_label'] == "Normal":
+                        st.write("Red areas indicate healthy kidney tissue confirming a Normal diagnosis.")
+                    else:
+                        st.write("Red areas indicate regions the AI found suspicious.")
             st.divider()
